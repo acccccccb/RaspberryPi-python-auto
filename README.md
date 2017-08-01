@@ -16,7 +16,7 @@ some python for my raspberry pi
 
 ## 3.copy fan-autostart.sh to /etc/init.d/ 
 
-> sudo cp /home/pi/RaspberryPi-python-auto/fan-autostart.sh /etc/init.d/fan-autostart
+> sudo cp /home/pi/RaspberryPi-python-auto/fan-autostart /etc/init.d/fan-autostart
 
 ## 4.allow to run fan-autostart
 
