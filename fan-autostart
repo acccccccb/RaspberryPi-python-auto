@@ -1,6 +1,6 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          fan.sh
+# Provides:          get.py
 # Required-Start:    $network $local_fs $remote_fs $syslog
 # Required-Stop::    $network $local_fs $remote_fs $syslog
 # Should-Start:      $all
@@ -14,8 +14,8 @@
 export HOME="/home/pi"
 export USER="root"
 #PIDFILE = /home/pi/RaspberryPi-python-auto/get.py
-echo 'start call py'
 
 python /home/pi/RaspberryPi-python-auto/led.py
 python /home/pi/RaspberryPi-python-auto/get.py
+
 exit 0

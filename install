@@ -1,0 +1,6 @@
+#!/bin/sh
+printf('Install fan-autostart')
+sudo cp /home/pi/RaspberryPi-python-auto/fan-autostart /etc/init.d/fan-autostart
+sudo chmod +x /etc/init.d/fan-autostart
+sudo update-rc.d fan-autostart defaults
+printf('Done')
