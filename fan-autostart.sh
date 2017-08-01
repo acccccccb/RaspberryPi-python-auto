@@ -16,5 +16,5 @@ export USER="root"
 #PIDFILE = /home/pi/get.py
 echo 'start call py'
 
-python /home/pi/get.py
+python /home/pi/RaspberryPi-python-auto/get.py
 exit 0
