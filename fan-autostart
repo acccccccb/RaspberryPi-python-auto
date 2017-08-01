@@ -13,8 +13,9 @@
 #NAME = fan
 export HOME="/home/pi"
 export USER="root"
-#PIDFILE = /home/pi/get.py
+#PIDFILE = /home/pi/RaspberryPi-python-auto/get.py
 echo 'start call py'
 
+python /home/pi/RaspberryPi-python-auto/led.py
 python /home/pi/RaspberryPi-python-auto/get.py
 exit 0

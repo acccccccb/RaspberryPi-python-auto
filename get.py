@@ -12,28 +12,21 @@ while ( count == 0 ) :
 	CPU_temp = getCPUtemperature()
 	
 	GPIO.setmode(GPIO.BCM)
-	led=19
-	fs=26
-	GPIO.setup(led,GPIO.OUT)
+	fs=14
 	GPIO.setup(fs,GPIO.OUT)
 	
 	if float(CPU_temp) >= 55 :
 		
 		print(getCPUtemperature())
-		print("Is too hot")
-		GPIO.output(led,GPIO.HIGH)
+		print("Fan power on")
 		GPIO.output(fs,GPIO.HIGH)
 	
 	elif float(CPU_temp) <= 45 :
-		print("I am so cold")
-		GPIO.output(led,GPIO.LOW)
 		GPIO.output(fs,GPIO.LOW)
-		print("fan power off")
+		print("Fan power off")
 		GPIO.cleanup()
 	
 	else :
-		print("so far so good" + CPU_temp)
-	
-	#count = count + 1
-	#print("count=" + str(count))
-	time.sleep(30)
+		print("CPU Temperature:" + CPU_temp)
+
+	time.sleep(10)

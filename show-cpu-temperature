@@ -7,5 +7,5 @@ def getCPUtemperature():
 count = 0
 while count == 0 :
 	print(getCPUtemperature())
-	time.sleep(10)
+	time.sleep(1)
 	

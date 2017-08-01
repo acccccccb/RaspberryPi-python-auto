@@ -5,7 +5,7 @@ led=26
 fs=14
 GPIO.setup(led,GPIO.OUT)
 GPIO.setup(fs,GPIO.OUT)
-GPIO.output(led,GPIO.LOW)
-GPIO.output(fs,GPIO.LOW)
-print("fan power off")
+GPIO.output(led,GPIO.HIGH)
+GPIO.output(fs,GPIO.HIGH)
+print("Fan power on")
 GPIO.cleanup()
